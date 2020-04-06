@@ -5,7 +5,7 @@ RSpec.describe PostsController do
     {
       title: "The Danger of Stairs",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, nulla vel condimentum ornare, arcu lorem hendrerit purus, ac sagittis ipsum nisl nec erat. Morbi porta sollicitudin leo, eu cursus libero posuere ac. Sed ac ultricies ante. Donec nec nulla ipsum. Nunc eleifend, ligula ut volutpat.",
-      category: "Non-Fiction"
+      category: "Non-Fiction",
     }
   end
   let(:found) { Post.find(@article.id) }
@@ -24,7 +24,7 @@ RSpec.describe PostsController do
       attributes.merge(
         id: @article.id,
         title: "Fifteen Ways to Transcend Corporeal Form",
-        category: "Fiction"
+        category: "Non-Fiction",
       )
     end
 
@@ -44,7 +44,7 @@ RSpec.describe PostsController do
       attributes.merge(
         title: nil,
         content: "too short",
-        category: "Speculative Fiction"
+        category: "Speculative Fiction",
       )
     end
 
