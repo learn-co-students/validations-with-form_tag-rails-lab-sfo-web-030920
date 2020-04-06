@@ -7,7 +7,7 @@ RSpec.describe Post, type: :model do
     {
       title: "You Won't Believe These True Facts",
       content: content,
-      category: "Fiction"
+      category: "Non-Fiction"
     }
   end
 
